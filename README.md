@@ -1,1 +1,1 @@
-# Web-Project-Sistem-per-menaxhim-te-universitetit-
+# Erjona Asmanollaj-Sistem-per-menaxhim-te-universitetit-
