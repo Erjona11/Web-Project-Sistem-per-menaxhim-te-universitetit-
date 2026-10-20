@@ -56,6 +56,64 @@ Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
 
 ### Dizajni Teknik
 
-- Frontend: HTML, CSS dhe JavaScript – për krijimin e ndërfaqes së përdoruesit, dizajnin, navigimin dhe funksionalitetet interaktive të platformës.
+- Frontend: HTML, CSS dhe JavaScript – për krijimin e ndërfaqes së përdoruesit, dizajnin, navigimin dhe funksionalitetet e platformës.
 - Backend: PHP – për logjikën e sistemit, autentifikimin e përdoruesve, përpunimin e të dhënave dhe komunikimin ndërmjet frontend-it dhe databazës.
 - Databaza: MySQL – për ruajtjen dhe menaxhimin e të dhënave të studentëve, profesorëve, lëndëve, notave, orareve, provimeve, njoftimeve etj.
+
+### Modeli fillestar i databazes ###
+1. Student
+- student_id – PK
+- emri
+- mbiemri
+- email
+- password
+- departamenti_id – FK
+2. Profesor
+- profesor_id – PK
+- emri
+- mbiemri
+- email
+- password
+- departamenti_id – FK
+3. Departament
+- departamenti_id – PK
+- emri
+- fakulteti
+4. Lenda
+- lenda_id – PK
+- emri
+- ects
+- departamenti_id – FK
+- profesor_id – FK
+5. Regjistrimi
+- regjistrimi_id – PK
+- student_id – FK
+- lenda_id – FK
+- nota
+6. Orari
+- orari_id – PK
+- lenda_id – FK
+- profesor_id – FK
+- dita
+- ora
+- salla
+7. Provimi
+- provimi_id – PK
+- lenda_id – FK
+- data
+- ora
+- salla
+8. Njoftimi
+- njoftimi_id – PK
+- titulli
+- pershkrimi
+- data
+
+**Relacionet kryesore**
+- Një Departament mund të ketë shumë studentë → 1:N
+- Një Departament mund të ketë shumë profesorë → 1:N
+- Një Departament mund të ketë shumë lëndë → 1:N
+- Një Profesor mund të ligjërojë shumë lëndë → 1:N
+- Një Student mund të regjistrohet në shumë lëndë dhe një Lëndë mund të ketë shumë studentë → N:M, e cila realizohet përmes tabelës Regjistrimi
+- Një Lëndë mund të ketë shumë termine/orare → 1:N
+- Një Lëndë mund të ketë shumë provime → 1:N
