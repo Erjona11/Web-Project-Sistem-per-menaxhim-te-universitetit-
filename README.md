@@ -26,8 +26,6 @@ Profesori do të mund të menaxhojë informacionet që lidhen me lëndët e tij.
 
 Administratori do të ketë rol më të gjerë në sistem.
 
-## Funksionalitetet kryesore, kërkesat funksionale dhe disa kërkesa jofunksionale
-
 ### Kërkesat funksionale
 
 Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
@@ -56,4 +54,9 @@ Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
 - Të dhënat e sistemit duhet të ruhen në mënyrë të organizuar në databazën MySQL.
 - Sistemi duhet të jetë i qëndrueshëm dhe të shmangë gabimet gjatë futjes ose kërkimit të të dhënave.
 
-## Diagrami i arkitekturës
+### Dizajni Teknik
+
+-Frontend: HTML, CSS dhe JavaScript – për krijimin e ndërfaqes së përdoruesit, dizajnin, navigimin dhe funksionalitetet interaktive të platformës.
+-Backend: PHP – për logjikën e sistemit, autentifikimin e përdoruesve, përpunimin e të dhënave dhe komunikimin ndërmjet frontend-it dhe databazës.
+-Databaza: MySQL – për ruajtjen dhe menaxhimin e të dhënave të studentëve, profesorëve, lëndëve, notave, orareve, provimeve, njoftimeve etj.
+
