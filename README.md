@@ -1,6 +1,6 @@
 # Erjona Asmanollaj - Sistem per menaxhim te universitetit
 
-Raporti 1 Teknik
+**Raporti 1 Teknik**
 
 ## Përshkrimi i projektit
 
