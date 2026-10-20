@@ -60,56 +60,65 @@ Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
 - Backend: PHP – për logjikën e sistemit, autentifikimin e përdoruesve, përpunimin e të dhënave dhe komunikimin ndërmjet frontend-it dhe databazës.
 - Databaza: MySQL – për ruajtjen dhe menaxhimin e të dhënave të studentëve, profesorëve, lëndëve, notave, orareve, provimeve, njoftimeve etj.
 
-### Modeli fillestar i databazes ###
-1. Student
+## Modeli fillestar i databazës
+
+### 1. Student
 - student_id – PK
 - emri
 - mbiemri
 - email
 - password
 - departamenti_id – FK
-2. Profesor
+
+### 2. Profesor
 - profesor_id – PK
 - emri
 - mbiemri
 - email
 - password
 - departamenti_id – FK
-3. Departament
+
+### 3. Departament
 - departamenti_id – PK
 - emri
 - fakulteti
-4. Lenda
+
+### 4. Lënda
 - lenda_id – PK
 - emri
 - ects
 - departamenti_id – FK
 - profesor_id – FK
-5. Regjistrimi
+
+### 5. Regjistrimi
 - regjistrimi_id – PK
 - student_id – FK
 - lenda_id – FK
 - nota
-6. Orari
+
+### 6. Orari
 - orari_id – PK
 - lenda_id – FK
 - profesor_id – FK
 - dita
 - ora
 - salla
-7. Provimi
+
+### 7. Provimi
 - provimi_id – PK
 - lenda_id – FK
 - data
 - ora
 - salla
-8. Njoftimi
+
+### 8. Njoftimi
 - njoftimi_id – PK
 - titulli
 - pershkrimi
 - data
 
-**Relacionet kryesore**
+### Relacionet kryesore
+
 - Një Departament mund të ketë shumë studentë → 1:N
 - Një Departament mund të ketë shumë profesorë → 1:N
 - Një Departament mund të ketë shumë lëndë → 1:N
