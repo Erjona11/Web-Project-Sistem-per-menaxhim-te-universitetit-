@@ -71,11 +71,11 @@ Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
 - Flow-i kryesor i sistemit:
 
 Studenti / Profesori / Administratori
-↓
+/
 Frontend – HTML + CSS + JavaScript
-↓
+/
 Backend – PHP
-↓
+/
 Databaza – MySQL
 
 ## Modeli fillestar i databazës
