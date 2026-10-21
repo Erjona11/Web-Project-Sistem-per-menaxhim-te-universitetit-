@@ -54,11 +54,29 @@ Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
 - Të dhënat e sistemit duhet të ruhen në mënyrë të organizuar në databazën MySQL.
 - Sistemi duhet të jetë i qëndrueshëm dhe të shmangë gabimet gjatë futjes ose kërkimit të të dhënave.
 
-### Dizajni Teknik
+### Dizajni Teknik ###
 
-- Frontend: HTML, CSS dhe JavaScript – për krijimin e ndërfaqes së përdoruesit, dizajnin, navigimin dhe funksionalitetet e platformës.
-- Backend: PHP – për logjikën e sistemit, autentifikimin e përdoruesve, përpunimin e të dhënave dhe komunikimin ndërmjet frontend-it dhe databazës.
-- Databaza: MySQL – për ruajtjen dhe menaxhimin e të dhënave të studentëve, profesorëve, lëndëve, notave, orareve, provimeve, njoftimeve etj.
+- Për zhvillimin e sistemit Student Hub do të përdoren HTML, CSS, JavaScript, PHP dhe MySQL. Këto teknologji do të ndahen në pjesën e frontend-it, backend-it dhe databazës.
+
+- Frontend: HTML, CSS dhe JavaScript – do të përdoren për krijimin e ndërfaqes së përdoruesit, dizajnin, navigimin dhe funksionalitetet interaktive të platformës. HTML do të përdoret për strukturën e faqeve, CSS për dizajnin dhe përshtatjen e tyre në pajisje të ndryshme, ndërsa JavaScript për funksionalitete interaktive.
+
+- Backend: PHP – do të përdoret për logjikën e sistemit, autentifikimin e përdoruesve, përpunimin e të dhënave dhe komunikimin ndërmjet frontend-it dhe databazës. PHP do të kontrollojë gjithashtu funksionalitetet që varen nga roli i përdoruesit, si studenti, profesori ose administratori.
+
+- Databaza: MySQL – do të përdoret për ruajtjen dhe menaxhimin e të dhënave të studentëve, profesorëve, lëndëve, departamenteve, notave, orareve, provimeve, njoftimeve dhe të dhënave të tjera të sistemit.
+
+### Diagrami i arkitekturës së sistemit ###
+
+- Arkitektura e sistemit do të jetë e organizuar në tri pjesë kryesore: frontend, backend dhe databazë. 
+
+- Flow-i kryesor i sistemit:
+
+Studenti / Profesori / Administratori
+↓
+Frontend – HTML + CSS + JavaScript
+↓
+Backend – PHP
+↓
+Databaza – MySQL
 
 ## Modeli fillestar i databazës
 
@@ -126,3 +144,25 @@ Sistemi duhet t'u mundësojë përdoruesve këto funksionalitete:
 - Një Student mund të regjistrohet në shumë lëndë dhe një Lëndë mund të ketë shumë studentë → N:M, e cila realizohet përmes tabelës Regjistrimi
 - Një Lëndë mund të ketë shumë termine/orare → 1:N
 - Një Lëndë mund të ketë shumë provime → 1:N
+
+### Plani për Raportin 2 ###
+
+- Deri në Raportin 2 planifikohet të realizohen pjesët kryesore të strukturës së sistemit Student Hub. Puna do të fokusohet në krijimin e bazës së aplikacionit dhe implementimin e funksionaliteteve kryesore.
+
+- Krijimi i strukturës fillestare të projektit me HTML, CSS, JavaScript dhe PHP.
+
+- Krijimi dhe konfigurimi i databazës MySQL sipas modelit të përcaktuar.
+
+- Krijimi i tabelave kryesore dhe lidhja e tyre përmes Primary Key dhe Foreign Key.
+
+- Krijimi i sistemit të autentifikimit dhe kyçjes së përdoruesve.
+
+- Implementimi i roleve të përdoruesve: Student, Profesor dhe Administrator.
+
+- Krijimi i dashboard-it fillestar për studentin.
+
+- Implementimi i shfaqjes së lëndëve dhe orarit të studentit.
+
+- Fillimi i funksionaliteteve për notat dhe provimet.
+
+- Krijimi i strukturës fillestare për njoftimet.
