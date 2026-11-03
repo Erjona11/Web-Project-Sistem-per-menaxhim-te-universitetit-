@@ -36,6 +36,11 @@
     <!-- HERO SECTION -->
     <section class="hero">
 
+        <div class="hero-slideshow">
+             <div class="slide"></div>
+             <div class="slide"></div>
+        </div>
+
         <div class="hero-content">
 
             <p class="welcome">MIRË SE VINI NË</p>
@@ -110,7 +115,6 @@
         <div class="feature-container">
 
             <div class="feature-card">
-                <div class="icon">📅</div>
                 <h3>Orari</h3>
                 <p>
                     Shiko orarin personal të ligjëratave,
@@ -119,7 +123,6 @@
             </div>
 
             <div class="feature-card">
-                <div class="icon">📚</div>
                 <h3>Lëndët</h3>
                 <p>
                     Menaxho lëndët e regjistruara dhe
@@ -128,7 +131,6 @@
             </div>
 
             <div class="feature-card">
-                <div class="icon">📝</div>
                 <h3>Detyrat</h3>
                 <p>
                     Mbaj shënim detyrat dhe afatet e
@@ -137,7 +139,6 @@
             </div>
 
             <div class="feature-card">
-                <div class="icon">📊</div>
                 <h3>Notat</h3>
                 <p>
                     Kontrollo rezultatet dhe progresin
@@ -146,11 +147,16 @@
             </div>
 
             <div class="feature-card">
-                <div class="icon">📖</div>
                 <h3>Materialet</h3>
                 <p>
                     Gjej materiale për përgatitje gjatë
                     afateve të provimeve.
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>Provimet</h3>
+                <p>
+                    Shiko datat, oraret dhe sallat e provimeve të ardhshme.
                 </p>
             </div>
 
@@ -158,8 +164,6 @@
 
     </section>
 
-
-    <!-- ANNOUNCEMENTS -->
     <section class="announcements" id="announcements">
 
         <div class="section-title">
@@ -247,6 +251,6 @@
         </div>
 
     </footer>
-
+<script src="js/script.js?v=2"></script>
 </body>
 </html>
