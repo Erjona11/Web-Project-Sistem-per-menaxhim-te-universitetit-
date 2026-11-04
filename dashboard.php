@@ -76,15 +76,15 @@ $title = $roles[$role] ?? "Përdorues";
             <?php if ($role === "student"): ?>
                 <div class="dashboard-card"><h3>Orari im</h3><p>Shiko orarin e ligjëratave.</p></div>
                 <div class="dashboard-card"><h3>Lëndët e mia</h3><p>Shiko lëndët e regjistruara.</p></div>
-                <div class="dashboard-card"><h3>Detyrat</h3><p>Kontrollo detyrat dhe afatet.</p></div>
-                <div class="dashboard-card"><h3>Notat e mia</h3><p>Shiko rezultatet akademike.</p></div>
+                <a href="assignments.php" class="dashboard-card"><h3>Detyrat</h3><p>Kontrollo detyrat dhe afatet.</p></a>
+                <a href="grades.php" class="dashboard-card"><h3>Notat e mia</h3><p>Shiko rezultatet akademike.</p></a>
                 <div class="dashboard-card"><h3>Provimet</h3><p>Kontrollo datat e provimeve.</p></div>
                 <div class="dashboard-card"><h3>Materialet</h3><p>Materialet për studim.</p></div>
             <?php elseif ($role === "profesor"): ?>
                 <div class="dashboard-card"><h3>Lëndët e mia</h3><p>Menaxho lëndët që ligjëron.</p></div>
                 <div class="dashboard-card"><h3>Studentët</h3><p>Shiko studentët e regjistruar.</p></div>
-                <div class="dashboard-card"><h3>Menaxhimi i notave</h3><p>Vendos dhe përditëso notat.</p></div>
-                <div class="dashboard-card"><h3>Detyrat</h3><p>Krijo dhe menaxho detyra.</p></div>
+                <a href="grades.php" class="dashboard-card"><h3>Menaxhimi i notave</h3><p>Vendos dhe përditëso notat.</p></a>
+                <a href="assignments.php" class="dashboard-card"><h3>Detyrat</h3><p>Krijo dhe menaxho detyra.</p></a>
                 <div class="dashboard-card"><h3>Njoftimet</h3><p>Publiko njoftime akademike.</p></div>
                 <div class="dashboard-card"><h3>Konsultimet</h3><p>Menaxho konsultimet.</p></div>
             <?php elseif ($role === "admin"): ?>
