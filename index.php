@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-    <!-- NAVIGATION -->
     <header>
         <nav class="navbar">
 
@@ -32,8 +30,6 @@
         </nav>
     </header>
 
-
-    <!-- HERO SECTION -->
     <section class="hero">
 
         <div class="hero-slideshow">
@@ -75,8 +71,6 @@
 
     </section>
 
-
-    <!-- ABOUT SECTION -->
     <section class="about" id="about">
 
         <div class="section-title">
@@ -103,8 +97,6 @@
 
     </section>
 
-
-    <!-- FEATURES -->
     <section class="features" id="features">
 
         <div class="section-title">
@@ -202,8 +194,6 @@
 
     </section>
 
-
-    <!-- CTA -->
     <section class="cta">
 
         <h2>Menaxho studimet më lehtë</h2>
@@ -218,9 +208,7 @@
         </a>
 
     </section>
-
-
-    <!-- FOOTER -->
+    
     <footer id="contact">
 
         <div class="footer-content">
